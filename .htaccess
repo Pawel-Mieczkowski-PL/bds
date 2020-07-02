@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^login login.php [L]
+RewriteRule ^generate-xml generate-xml.php [L]
+RewriteRule ^add add-xml.php [L]
+RewriteRule ^api/([-a-zA-Z\\+\\ ]+)?$ api/$1.php [L]
+RewriteRule ^api/([-a-zA-Z\\+\\ ]+)/([-a-zA-Z\\+\\ ]+)?$ api/$1.php?method=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
