@@ -19,7 +19,7 @@ include "./session.php";
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-    </p> -->
+    </p>xxx -->
     <script src="http://bds.peelen.pl/javascript/app.js" async></script>
 </body>
 
